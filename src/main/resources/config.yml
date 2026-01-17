@@ -1,0 +1,23 @@
+# Message shown to players who are not whitelisted.
+# Supports MiniMessage format (e.g. <red>, <bold>, <gradient:red:blue>).
+kick-message: "<red><bold>You are not whitelisted on this server.</bold><br><gray>Please contact an administrator if you think that this is a mistake.</gray></red>"
+
+# Enable debug logging to console.
+debug-mode: false
+
+# Messages for commands
+messages:
+  prefix: "<gray>[<gradient:#00ff00:#00aa00>IPWhitelist</gradient>]</gray> "
+  no-permission: "<red>You do not have permission to use this command.</red>"
+  usage: "<yellow>Usage: /ipwhitelist <add|remove|list|reload|confirm> [args]</yellow>"
+  reload: "<green>Configuration reloaded.</green>"
+  add-success: "<green>IP <ip> added to whitelist (Player: <player>).</green>"
+  add-fail: "<red>Failed to add IP <ip>. It might already exist.</red>"
+  remove-success: "<green>IP <ip> removed from whitelist.</green>"
+  remove-fail: "<red>IP <ip> not found in whitelist.</red>"
+  remove-confirm: "<yellow>Are you sure you want to remove <count> IPs associated with player <player>? Type <gold>/ipwhitelist confirm</gold> within 30 seconds.</yellow>"
+  confirm-success: "<green>Confirmed. Action executed.</green>"
+  confirm-fail: "<red>No pending confirmation found.</red>"
+  invalid-ip: "<red>Invalid IPv4 format. Example: 192.168.1.1</red>"
+  list-header: "<gold>Whitelisted IPs:</gold>"
+  list-empty: "<yellow>The whitelist is empty.</yellow>"
